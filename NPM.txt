@@ -1,0 +1,44 @@
+NPM I JQUERY -G
+NPM REMOVE JQUERY
+package.json{
+	"dependencies": {
+    		"jquery": "^3.6.0", 
+   		 "moment": "~2.29.4"
+  		},
+	}
+Controle de versões:
+"jquery": "^3.6.0",   UPDATE.MAJOR.MINOR.PATH
+^ - update das versões do MINOR e do PATH
+~ - update das versões apenas do PATH
+3. - versão do MAJOR, pode haver alterações que façam seu package deixa de funcionar.
+.6. - versão do MINOR, acrescentam novas funcionalidades ao package.
+.0 - versão do PATH, correção de bugs
+
+-------------------------------
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minclip": "node_modules/.bin/uglifyjs clipboard -c -o clipboard.min.js"
+  },
+--------------------------------
+IMPORT E EXPORT JS.
+- EXPORT 
+Arquivo plugin.js > 
+	function imc(peso, altura){
+    		let imc = peso / (altura * altura)
+    		return imc;
+	}	
+
+	function quadrado(numero){
+   	 	let quadrado = numero * numero;
+   		 return quadrado;
+	}
+
+	module.exports.imc = imc;
+	module.exports.quadrado = quadrado;
+
+- IMPORT
+Arquivo main.js >
+	let plugin = require ('./plugin');
+
+	console.log(plugin.imc(70, 1.60))
+	console.log(plugin.quadrado(8))
