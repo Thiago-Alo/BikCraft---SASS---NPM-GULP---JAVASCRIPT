@@ -1,0 +1,10 @@
+copiar o PACKAGE.json e o GULPFILE.js
+- TERMINAL
+1. npm install
+2. gulp
+3.1 Obs: o arquivo style.css será criado no passo 6, criar apenas os arquivos style.scss
+3. Criar os arquivos INDEX, e as pastas CSS/SCSS e o arquivo STYLE.SCSS
+4.1 Obs: o arquivo main.js será criado no passo 6, criar apenas os arquivos style.scss
+4. Criar JS/COMPONENTS e um arquivo teste.js
+5. ir no arquivo GULPFILE.js e atualizar os caminhos das pastas do CSS , do JS e dos WATCH
+6. parar o gulp (CONTROL + C) e rodar gulp novamente
