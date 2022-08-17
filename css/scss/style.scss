@@ -1,2 +1,10 @@
-@import './pages/_home.scss';
-@import './modais/modais';
+@import './bikcraft/variaveis-e-mixins';
+@import './bikcraft/normalize';
+@import './bikcraft/reset';
+@import './bikcraft/grid';
+@import './bikcraft/geral.scss';
+@import './bikcraft/produtos';
+@import './bikcraft/portfolio';
+@import './bikcraft/contato';
+@import './bikcraft/sobre';
+// @import './exemplos/exemplos';
